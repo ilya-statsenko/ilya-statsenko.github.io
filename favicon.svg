@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Unfinished">
+  <title>Unfinished</title>
+  <style>
+    .tile { fill: #ffffff; }
+    .ink { fill: #111111; }
+    .line { stroke: #111111; }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #111111; }
+      .ink { fill: #ffffff; }
+      .line { stroke: #ffffff; }
+    }
+  </style>
+  <rect class="tile" x="0" y="0" width="32" height="32" rx="4" fill="#ffffff"/>
+  <path class="ink" fill="#111111" d="M3 8H10V15H3ZM12 8H19V15H12ZM21 8H28V15H21ZM3 17H10V24H3ZM12 17H19V24H12Z"/>
+  <path class="line" d="M27.2 19V17.8H21.8V23.2H27.2V22" fill="none" stroke="#111111" stroke-width="1.6" stroke-linejoin="miter" stroke-linecap="square"/>
+</svg>
