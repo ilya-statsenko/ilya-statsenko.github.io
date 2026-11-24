@@ -1,4 +1,3 @@
-
 /* Predictive Space V7 — approved preset. Derived directly from the V7 chat prototype.
  * The pure renderer uses CSS-pixel geometry, then scales for DPR. No time-based animation.
  * Only the input adapter and UI are separated from the original prototype. */
@@ -13,7 +12,7 @@ const noise=(i,k=0)=>fract(Math.sin((i+1)*127.1+(k+1)*311.7)*43758.5453);
 const tokens=['zₜ','aₜ','sₜ','zₜ₊₁','π(a|s)','∇θ','∂L','Dₖₗ','Δt','ε','fθ','p(z)','xₜ','L(θ)','γ','Σ','E[·]','σ','vₜ','μ','λ','KL','MSE','δ','0.01','0.5','LPIPS','SSIM','ℝᵈ','p(x|z)','‖·‖₂','α','β','rₜ','ψ','V(s)','√t','0.125','τ','η'];
 /** All measurements (W,H,left,right) are CSS pixels. p = normalized scroll progress.
  * left/right are the actual reading column boundaries relative to the canvas. */
-function draw(ctx,{W,H,dpr=1,p=0,left,right}){
+function draw(ctx,{W,H,dpr=1,p=0,left,right,tone=0}){
 if(!W||!H)return;
 ctx.setTransform(dpr,0,0,dpr,0,0);
 ctx.globalCompositeOperation='source-over';
@@ -23,7 +22,7 @@ const power=CONFIG.motion/100;
 const contrast=CONFIG.contrast/60;
 const travel=p*CONFIG.direction*power;
 const phase=travel*2.5;
-const alpha=a=>`rgba(12,12,12,${clamp(a*contrast,0,.86)})`;
+const ink=Math.round(mix(12,255,clamp(tone,0,1))); const alpha=a=>`rgba(${ink},${ink},${ink},${clamp(a*contrast,0,.86)})`;
 // Fixed oblique orthographic projection, as in V7.
 const x0=-W*.15,y0=H*1.03,dx=W*1.34,dy=-H*1.02;
 const len=Math.hypot(dx,dy),ux=dx/len,uy=dy/len,nx=-uy,ny=ux;

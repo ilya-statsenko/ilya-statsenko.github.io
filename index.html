@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>try{if(localStorage.getItem("predictive-space-theme")==="dark")document.documentElement.dataset.initialTheme="dark"}catch{}</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ilya Statsenko — ML Research Engineer</title>
 <meta name="description" content="Ilya Statsenko, ML Research Engineer. Generative models, world models and robot learning.">
 <meta property="og:title" content="Ilya Statsenko — ML Research Engineer">
 <meta property="og:description" content="Research in generative models. Exploring world models and robot learning.">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 <link rel="canonical" href="https://ilya-statsenko.github.io/">
 <meta property="og:url" content="https://ilya-statsenko.github.io/">
 <script src="field-v7.js" defer></script>
-<script src="motion.js?v=7" defer>
+<script src="theme-transition.js" defer>
 </script>
 <link rel="icon" href="favicon.ico?v=unfinished" sizes="any">
 <link rel="icon" href="favicon.svg?v=unfinished" type="image/svg+xml">
@@ -88,5 +89,5 @@
 <button id="motion-toggle" type="button" aria-pressed="false">Motion off</button><p class="copyright">Ilya Statsenko</p>
 </footer>
 </main>
-</div></body>
+</div><button type="button" id="theme" class="theme" aria-label="Switch to dark theme" aria-pressed="false"><svg viewBox="-16 -16 32 32" aria-hidden="true"><defs><mask id="moon-mask"><rect x="-16" y="-16" width="32" height="32" fill="white"/><circle id="bite" cx="24" cy="-5.4" r="8.5" fill="black"/></mask></defs><g id="spin"><g id="rays" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></g><circle id="disk" r="5.7" fill="currentColor" mask="url(#moon-mask)"/></g></svg></button></body>
 </html>
