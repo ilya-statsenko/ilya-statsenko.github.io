@@ -7,13 +7,14 @@
 <meta name="description" content="Ilya Statsenko, ML Research Engineer. Generative models, world models and robot learning.">
 <meta property="og:title" content="Ilya Statsenko — ML Research Engineer">
 <meta property="og:description" content="Research in generative models. Exploring world models and robot learning.">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=7">
 <link rel="canonical" href="https://ilya-statsenko.github.io/">
 <meta property="og:url" content="https://ilya-statsenko.github.io/">
-<script src="motion.js" defer>
+<script src="field-v7.js" defer></script>
+<script src="motion.js?v=7" defer>
 </script>
 </head>
-<body>
+<body><div id="predictive-stage" aria-hidden="true"><canvas id="predictive-field"></canvas></div><div id="reading-column">
 <a class="skip" href="#main">Skip to content</a>
 <header class="wrap">
 <a class="wordmark" href="#main">I. STATSENKO</a>
@@ -25,16 +26,13 @@
 </header>
 <main id="main">
 <section class="hero wrap">
-<div class="hero-top">
 <p class="eyebrow">GENERATIVE MODELS / EMBODIED INTELLIGENCE</p>
-<span class="micro">RESEARCH & ENGINEERING</span>
-</div>
-<h1>Ilya Statsenko<span class="period">.</span>
+<h1>Ilya Statsenko
 </h1>
 <div class="hero-bottom">
 <div class="identity">
-<p class="micro">GENERATIVE MODELS.<br>EMBODIED INTELLIGENCE.</p>
-<p class="role">ML Research Engineer<br>T-Bank / T-Tech</p>
+
+<p class="role">ML Research Engineer · T-Bank / T-Tech</p>
 <p class="muted">M.Sc. · Central University</p>
 <div class="links">
 <a href="mailto:ilyastatsenkoml@gmail.com">Email</a>
@@ -44,16 +42,15 @@
 <p class="intro">I work on generative models.<br>I'm exploring how world models and predictive representations can support reliable decisions in embodied systems.</p>
 <figure>
 <img src="assets/images/profile.webp" width="1000" height="750" alt="Two people standing together on a stage, one holding a controller.">
-<figcaption>Outside research.</figcaption>
+
 </figure>
 </div>
-<div class="grid-plane" aria-hidden="true">
-</div>
+
 </section>
 <section class="research wrap" id="research">
 <p class="eyebrow">01 / SELECTED RESEARCH</p>
 <article class="paper">
-<div class="venue">
+<div class="venue"><div class="lettering"><svg viewBox="0 0 240 90" role="img" aria-label="NAMVIS experimental lettering"><g fill="none" stroke="currentColor" stroke-width=".6" opacity=".2"><path d="M0 10H240M0 30H240M0 50H240M0 70H240M0 90H240M10 0V90M30 0V90M50 0V90M70 0V90M90 0V90M110 0V90M130 0V90M150 0V90M170 0V90M190 0V90M210 0V90M230 0V90"/></g><g fill="currentColor"><path d="M5 20H15L30 50V20H39V68H29L14 38V68H5Z"/><path fill-rule="evenodd" d="M47 20H75L82 68H71L69 54H53L51 68H40ZM56 31L54 44H68L66 31Z"/><path d="M86 20H98L110 41L122 20H134V68H124V37L110 59L96 37V68H86Z"/><path d="M139 20H151L160 53L170 20H181L166 68H153Z"/><path d="M187 20H198V68H187Z"/><path d="M205 20H235V31H216V39H235V68H205V57H224V49H205Z"/></g></svg></div>
 <span>NeurIPS</span>
 <strong>2026</strong>
 <p>Multi-view image synthesis</p><figure class="results"><div class="result-images"><img src="assets/images/namvis-1.webp" width="256" height="256" loading="lazy" alt="NAMVIS-generated frog view 1"><img src="assets/images/namvis-2.webp" width="256" height="256" loading="lazy" alt="NAMVIS-generated frog view 2"><img src="assets/images/namvis-3.webp" width="256" height="256" loading="lazy" alt="NAMVIS-generated frog view 3"></div><figcaption>One object, multiple viewpoints.<br>Generated views · <a href="https://corl-team.github.io/namvis/">NAMVIS project</a></figcaption></figure>
@@ -70,13 +67,13 @@
 </div>
 </div>
 </article>
-<p class="more micro">More to come.</p>
+<div class="more"><span class="mono">More to come.</span><svg width="82" height="24" viewBox="0 0 82 24" aria-hidden="true"><g fill="#111"><path d="M0 2H8V10H0ZM11 2H19V10H11ZM0 13H8V21H0ZM11 13H19V21H11ZM22 13H30V21H22Z"/></g><g stroke="#111" fill="none" stroke-width=".7" opacity=".45"><path d="M22 2H30V10H22ZM33 2H41V10H33ZM33 13H41V21H33ZM44 2H52V10H44ZM44 13H52V21H44ZM55 2H63V10H55ZM55 13H63V21H55Z"/></g><path d="M66 2H74V10H66Z" fill="none" stroke="#111" stroke-dasharray="1 2" opacity=".25"/></svg></div>
 </section>
 <section class="inverse">
 <div class="wrap questions">
 <div>
 <p class="eyebrow">02 / RESEARCH INTERESTS</p>
-<h2>Questions I'm<br>exploring</h2>
+<h2>Questions I'm exploring</h2>
 </div>
 <div>
 <p>What information about the future is actually useful for robot control?</p>
@@ -120,8 +117,8 @@
 <a class="email" href="mailto:ilyastatsenkoml@gmail.com">ilyastatsenkoml@gmail.com</a>
 </div>
 <a href="https://www.linkedin.com/in/ilya-statsenko/">LinkedIn</a>
-<p class="copyright">Ilya Statsenko</p>
+<button id="motion-toggle" type="button" aria-pressed="false">Motion off</button><p class="copyright">Ilya Statsenko</p>
 </footer>
 </main>
-</body>
+</div></body>
 </html>

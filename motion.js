@@ -1,6 +1,7 @@
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('revealed');observer.unobserve(entry.target);} });
-  }, {threshold: .12});
-  document.querySelectorAll('.grid-plane, .paper, .questions').forEach(el => observer.observe(el));
-}
+const toggle = document.querySelector('#motion-toggle');
+let paused = false;
+try {
+ const field = window.PredictiveSpaceV7?.mount({canvas:document.querySelector('#predictive-field'),stage:document.querySelector('#predictive-stage'),content:document.querySelector('#reading-column'),onState(state){paused=state.paused;toggle.textContent=state.paused?'Motion on':'Motion off';toggle.disabled=state.reducedMotion;toggle.setAttribute('aria-pressed',String(state.paused));toggle.title=state.reducedMotion?'Motion disabled by your system preference':'';}});
+ if(field) toggle.addEventListener('click',()=>field.setPaused(!paused));
+ else toggle.hidden=true;
+} catch { toggle.hidden=true; }

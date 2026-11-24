@@ -1,0 +1,9 @@
+{
+  "theme": "light",
+  "motion": 50,
+  "surfaceSymbols": 32,
+  "contrast": 55,
+  "angle": "oblique",
+  "direction": 1,
+  "core": "hybrid"
+}
