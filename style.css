@@ -14,3 +14,5 @@
 .hero figure.figure{width:min(400px,calc(100% - 20px));margin:28px auto 0}.hero{padding-top:42px}.hero .intro{margin:20px auto 18px}
 
 .conference{display:flex;align-items:center;gap:14px;margin:0 0 20px}.conference strong{font:600 22px/1.3 Inter,Arial,sans-serif;letter-spacing:-.03em}.conference span{border-left:1px solid #ccc;padding-left:14px;font:12px/1.3 Mono,monospace;letter-spacing:.08em;color:#666}.venue .lettering{margin-bottom:0}.venue .results{margin-top:10px}
+
+.directions h2{margin:14px 0 24px}.direction{display:grid;grid-template-columns:25px 1fr;gap:8px;border-top:1px solid #ddd;padding:20px 0}.direction span{font:12px/1.6 Mono,monospace;color:#777}.direction h3{font:600 18px/1.4 Inter,Arial,sans-serif;margin:0 0 5px}.direction p{font-size:14px;line-height:1.6;color:#595959;margin:0}
