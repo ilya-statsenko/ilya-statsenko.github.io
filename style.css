@@ -12,3 +12,5 @@
 .figure[data-style=technical] .frame:before{display:block;inset:calc(-1 * var(--gap));background:linear-gradient(var(--stroke),var(--stroke)) left top/18px 1px no-repeat,linear-gradient(var(--stroke),var(--stroke)) left top/1px 18px no-repeat,linear-gradient(var(--stroke),var(--stroke)) right top/18px 1px no-repeat,linear-gradient(var(--stroke),var(--stroke)) right top/1px 18px no-repeat,linear-gradient(var(--stroke),var(--stroke)) left bottom/18px 1px no-repeat,linear-gradient(var(--stroke),var(--stroke)) left bottom/1px 18px no-repeat,linear-gradient(var(--stroke),var(--stroke)) right bottom/18px 1px no-repeat,linear-gradient(var(--stroke),var(--stroke)) right bottom/1px 18px no-repeat}
 
 .hero figure.figure{width:min(400px,calc(100% - 20px));margin:28px auto 0}.hero{padding-top:42px}.hero .intro{margin:20px auto 18px}
+
+.conference{display:flex;align-items:center;gap:14px;margin:0 0 20px}.conference strong{font:600 22px/1.3 Inter,Arial,sans-serif;letter-spacing:-.03em}.conference span{border-left:1px solid #ccc;padding-left:14px;font:12px/1.3 Mono,monospace;letter-spacing:.08em;color:#666}.venue .lettering{margin-bottom:0}.venue .results{margin-top:10px}
